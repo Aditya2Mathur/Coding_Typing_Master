@@ -4,7 +4,7 @@ import ThemeButton from "../Components/ThemeButton";
 export function ThemesSection({}) {
   return (
     <>
-      <div className=" my-20">
+      <div className="my-10">
         <h1 className=" text-4xl my-8">Themes</h1>
         <div className=" grid grid-cols-4 gap-10">
           <ThemeButton label="Default" themeClassName="normal-theme" />

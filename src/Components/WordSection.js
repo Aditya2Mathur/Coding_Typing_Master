@@ -26,7 +26,7 @@ export function WordSection({ changeWordAmount, wordAmount }) {
         </div>
        <div>
        <h1 className="my-8 text-4xl">Select Programming Languages</h1>
-        <div>
+        <div className="grid grid-cols-2">
           {languages.map((language) => (
             <div key={language}>
               <input
