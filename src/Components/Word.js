@@ -15,7 +15,7 @@ function Word({ text, active, correct }) {
     return <span className="underline bg-skin-fill text-skin-wrong rounded-sm mr-1">{text} </span>;
   }
   if (active) {
-    return <span className="text-skin-base font-bold text-[27px]">{text} </span>;
+    return <span className="text-skin-base font-bold">{text} </span>;
   }
 
   return (

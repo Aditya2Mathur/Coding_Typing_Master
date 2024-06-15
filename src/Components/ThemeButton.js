@@ -11,17 +11,17 @@ const ThemeButton = ({ label, themeClassName }) => {
   }
 
   return (
-    themeClassName == theme ?
+    themeClassName === theme ?
 
-    <div>   
-      <button className="p-8 rounded-md w-full bg-skin-fill hover:opacity-70  duration-200 outline-dashed outline-2 outline-offset-2 text-skin-base" onClick={handleClick}>
+    <div >   
+      <button className="p-2 md:p-4 lg:p-5 xl:p-1 text-xs bg-[#1D4ED8] lg:text-2xl xl:text-2xl md:text-xl rounded-md w-full bg-skin-fill hover:-translate-y-1 hover:scale-110 ease-in-out duration-200"  onClick={handleClick}>
         {label}
       </button>
     </div>
     :
     
     <div>   
-      <button className="p-8 rounded-md w-full bg-skin-fill hover:-translate-y-1 hover:scale-110 hover:opacity-70  ease-in-out duration-200" onClick={handleClick}>
+      <button className="p-2 md:p-4 lg:p-3 xl:p-1 text-xs lg:text-2xl xl:text-2xl md:text-xl rounded-md w-full bg-skin-fill hover:-translate-y-1 hover:scale-110   ease-in-out duration-200" onClick={handleClick}>
         {label}
       </button>
     </div>

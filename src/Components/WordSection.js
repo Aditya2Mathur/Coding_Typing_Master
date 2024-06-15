@@ -10,9 +10,9 @@ export function WordSection({ changeWordAmount, wordAmount }) {
 
   return (
     <>
-      <div className=" flex justify-evenly">
+      <div className=" lg:mb-20 flex gap-4 sm:justify-evenly xl:justify-evenly lg:flex-row flex-col sm:max-:flex-col">
         <div className="">
-        <h1 className="my-8 text-4xl">Word Amount</h1>
+        <h1 className="my-4 lg:my-8 lg:text-4xl sm:text-2xl">Word Amount</h1>
         <div className="grid grid-cols-2 gap-10">
           {wordAmounts.map((amount) => (
             <WordButton
@@ -25,18 +25,18 @@ export function WordSection({ changeWordAmount, wordAmount }) {
         </div>
         </div>
        <div>
-       <h1 className="my-8 text-4xl">Select Programming Languages</h1>
-        <div className="grid grid-cols-2">
+       <h1 className="my-4 lg:my-8 text-2xl lg:text-4xl xl:text-4xl md:text-2xl">Select Programming Languages</h1>
+        <div className="grid grid-cols-3">
           {languages.map((language) => (
             <div key={language}>
-              <input
+              <input 
                 type="checkbox"
                 id={language}
                 name={language}
                 checked={selectedLanguages.includes(language)}
                 onChange={() => toggleLanguage(language)}
               />
-              <label htmlFor={language}>{language}</label>
+              <label className="text-xs lg:text-2xl xl:text-2xl md:text-xl" htmlFor={language}>{language}</label>
             </div>
           ))}
         </div>

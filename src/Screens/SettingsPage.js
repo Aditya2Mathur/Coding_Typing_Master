@@ -16,7 +16,7 @@ const SettingsPage = () => {
   return (
     <div>
       <section>
-        <Navbar />
+        <Navbar/>
         <WordSection changeWordAmount={changeWordAmount} wordAmount={wordAmount} />
         <ThemesSection />
         <div className="flex justify-center mt-8">

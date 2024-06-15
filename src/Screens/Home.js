@@ -5,7 +5,7 @@ import "../App.css";
 function Home() {
   return (
     <div>
-      <section className="grid h-screen px-96">
+      <section className="grid h-screen lg:px-50">
         <Navbar />
         <TypingCard/>
       </section>
