@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import { useContext } from "react";
+import React, { useState, useContext } from "react";
 import "../App.css";
 import TypingPage from "../Screens/TypingPage";
 import ResultPage from "../Screens/ResultPage";
@@ -7,9 +6,8 @@ import commonWords from "../Data/word.json";
 import { WordAmountContext } from "./WordProvider";
 
 function TypingCard() {
-  const { wordAmount, changeWordAmount } = useContext(WordAmountContext);
-  let [typingList, setTypingList] = useState(renderWords());
-  const [word, setWord] = useState(typingList);
+  const { wordAmount, selectedLanguages } = useContext(WordAmountContext);
+  const [word, setWord] = useState(renderWords());
   const [userInput, setUserInput] = useState("");
   const [activeWordIndex, setActiveWordIndex] = useState(0);
   const [correctWordArray, setCorrectWordArray] = useState([]);
@@ -23,18 +21,19 @@ function TypingCard() {
     setStartCounting(false);
     setUserInput("");
     setTestFinished(false);
-    renderWords();
     setWord(renderWords());
   }
 
   function renderWords() {
-    const randomNumbers = Array.from({ length: wordAmount }, () =>
-      Math.floor(Math.random() * (150 - 1 + 1) + 1)
+    const allWords = selectedLanguages.length
+      ? selectedLanguages.flatMap((lang) => commonWords[lang])
+      : Object.values(commonWords).flat();
+
+    const randomWords = Array.from({ length: wordAmount }, () =>
+      allWords[Math.floor(Math.random() * allWords.length)]
     );
-    return randomNumbers
-      .map((index) => commonWords.commonWords[index])
-      .join(" ")
-      .split(" ");
+
+    return randomWords;
   }
 
   function handleTabbed(KeyCode) {
@@ -48,13 +47,11 @@ function TypingCard() {
     if (!startCounting) {
       setStartCounting(true);
     }
-
     if (value.endsWith(" ")) {
       if (activeWordIndex === word.length - 1) {
         setUserInput("");
         setStartCounting(false);
         setTestFinished(true);
-
         return;
       }
 
@@ -65,7 +62,6 @@ function TypingCard() {
         const newword = value.trim();
         const newResult = [...data];
         newResult[activeWordIndex] = newword === word[activeWordIndex];
-
         return newResult;
       });
     } else {
@@ -75,7 +71,7 @@ function TypingCard() {
 
   return testFinished ? (
     <ResultPage
-      getWords={typingList}
+      getWords={word}
       timeElapsed={timeElapsed}
       testFinished={testFinished}
       setTestFinished={setTestFinished}

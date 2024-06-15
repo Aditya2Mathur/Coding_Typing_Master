@@ -24,7 +24,6 @@ function Navbar() {
     </nav>
           {/* Darkmode test */}
           <div className="flex">
-            
           </div>
         </div>
       </div>

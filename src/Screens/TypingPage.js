@@ -1,9 +1,7 @@
 import React from "react";
-
 import Timer from "../Components/Timer";
 import TypingText from "../Components/TypingText";
 import Input from "../Components/Input";
-
 export function TypingPage({
   startCounting,
   timeElapsed,
