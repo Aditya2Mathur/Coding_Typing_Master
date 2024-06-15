@@ -10,9 +10,10 @@ export function WordSection({ changeWordAmount, wordAmount }) {
 
   return (
     <>
-      <div className="my-20">
+      <div className=" flex justify-evenly">
+        <div className="">
         <h1 className="my-8 text-4xl">Word Amount</h1>
-        <div className="grid grid-cols-4 gap-10">
+        <div className="grid grid-cols-2 gap-10">
           {wordAmounts.map((amount) => (
             <WordButton
               key={amount}
@@ -22,7 +23,9 @@ export function WordSection({ changeWordAmount, wordAmount }) {
             />
           ))}
         </div>
-        <h1 className="my-8 text-4xl">Select Programming Languages</h1>
+        </div>
+       <div>
+       <h1 className="my-8 text-4xl">Select Programming Languages</h1>
         <div>
           {languages.map((language) => (
             <div key={language}>
@@ -37,6 +40,7 @@ export function WordSection({ changeWordAmount, wordAmount }) {
             </div>
           ))}
         </div>
+       </div>
       </div>
     </>
   );

@@ -17,8 +17,8 @@ const SettingsPage = () => {
     <div>
       <section>
         <Navbar />
-        <ThemesSection />
         <WordSection changeWordAmount={changeWordAmount} wordAmount={wordAmount} />
+        <ThemesSection />
         <div className="flex justify-center mt-8">
           <button 
             onClick={handleSubmit} 
