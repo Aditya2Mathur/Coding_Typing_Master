@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import ThemeProvider from "../Components/ThemeProvider";
+
 import WordProvider from "./WordProvider";
 // Pages
 import Home from "../Screens/Home";
@@ -9,7 +9,7 @@ import InfoPage from "../Screens/InfoPage";
 
 function AppRoutes() {
   return (
-    <ThemeProvider>
+    
       <WordProvider>
         <Router>
           <Routes>
@@ -20,7 +20,7 @@ function AppRoutes() {
           </Routes>
         </Router>
       </WordProvider>
-    </ThemeProvider>
+    
   );
 }
 
