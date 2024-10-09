@@ -1,33 +1,38 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import navLogo from "../Assets/navLogo.png";
+import "./components.css"
+import settingIcon from "../Assets/settings.png"
 
 function Navbar() {
   return (
-    <div>
-      {/* Card */}
-      <div>
-        <div className="flex place-content-between">
-          
- <nav class="nav font-semibold text-lg">
-        <ul class="flex items-center">
-            <li class="p-4 border-b-2 border-white border-opacity-0 hover:border-opacity-100 hover:text-white duration-200 cursor-pointer active">
-              <Link to="/home">Home</Link>
-            </li>
-            <li class="p-4 border-b-2 border-white border-opacity-0 hover:border-opacity-100 hover:text-white duration-200 cursor-pointer">
-             <Link to="/settings">Settings</Link>
-            </li>
-            <li class="p-4 border-b-2 border-white border-opacity-0 hover:border-opacity-100 hover:text-white duration-200 cursor-pointer">
-              <Link to="/info">Info</Link>
-            </li>
-            
+    <div className="bg-black/[.30] h-[80px] flex justify-evenly items-center">
+    {/* Card */}
+    <div className="flex justify-between items-center w-full max-w-screen-lg">
+      <div className="flex justify-center items-center">
+        <img src={navLogo} className="mx-auto" />
+      </div>
+      <nav className="nav font-semibold text-lg">
+        <ul className="flex justify-center">
+          <li className="p-4 nav-link text-paragraph duration-200 cursor-pointer active">
+            <Link to="/home">Home</Link>
+          </li>
+          <li className="p-4 nav-link duration-200 cursor-pointer">
+            <Link to="/settings">Settings</Link>
+          </li>
+          <li className="p-4 nav-link duration-200 cursor-pointer">
+            <Link to="/info">Info</Link>
+          </li>
         </ul>
-    </nav>
-          {/* Darkmode test */}
-          <div className="flex">
-          </div>
-        </div>
+      </nav>
+      {/* Darkmode test */}
+      <div className="flex justify-center setting-icon-outer items-center p-1">
+        <Link to="settings">
+          <img src={settingIcon} className="setting-icon mx-auto " />
+        </Link>
       </div>
     </div>
+  </div>
   );
 }
 
