@@ -1,11 +1,13 @@
 import React from "react";
+import "./components.css"
 export function Input({ userInput, processInput, handleTabbed }) {
   return (
     <input
-      className=" opacity-100 bg-[#fb923c68] rounded-md p-2 my-3 w-full"
+      className=" opacity-100 input-text-box rounded-md p-2 my-3 w-full"
       autoComplete="off"
       autoCorrect="off"
       autoCapitalize="off"
+      placeholder="Typing text"
       autoFocus
       clearable
       value={userInput}

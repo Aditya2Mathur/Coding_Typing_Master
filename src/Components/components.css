@@ -1,0 +1,154 @@
+:root {
+    --background-color-1: #150D39;
+    --foreground-color-1: #241C52;
+    --foreground-color-2: #2C245A;
+    --text-white: #FFFCFF;
+    --text-paragraph: #868DC1;
+    --button-background: linear-gradient(90deg, #64B9F5, #7D57E7);
+}
+.h4-heading {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.color-background-1 {
+    background-color: var(--background-color-1);
+}
+
+.color-foreground-1 {
+    background-color: var(--foreground-color-1);
+}
+
+.color-foreground-2 {
+    background-color: var(--foreground-color-2);
+}
+
+.text-white {
+    color: var(--text-white);
+}
+
+.text-paragraph {
+    color: var(--text-paragraph);
+}
+.nav-link{
+    color: var(--text-paragraph);
+    font-size: 16px;
+    font-weight: 500;
+}
+.nav-link:hover {
+    color: var(--text-white);
+}
+
+.setting-icon-outer {
+    border: 1px solid var(--foreground-color-2);
+    background: var(--background-color-1);
+    border-radius: 30%;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.setting-icon-outer:hover {
+    transform: scale(1.1);
+    background-color: var(--foreground-color-2);
+}
+
+.setting-icon {
+    padding: 4px;
+    width: 25px;
+    height: 25px;
+    transition: transform 0.3s ease;
+}
+
+.setting-icon-outer:hover .setting-icon {
+    animation: rotateIcon 0.5s ease-in-out forwards;
+}
+
+@keyframes rotateIcon {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.background{
+    background-color: var(--background-color-1);
+}
+.main-heading{
+    font-size: 28px;
+    font-weight: bold;
+}
+p{
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-paragraph);
+}
+/* Timer */
+.timer-box {
+    background-color: var(--foreground-color-2);
+    border-radius: 8px;
+    padding: 10px;
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .timer-display {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    color: var(--text-white);
+  }
+  
+  .timer-text {
+    font-size: 14px;
+    margin: 0;
+    color: var(--text-paragraph);
+  }
+  .typing-area{
+    background: var(--foreground-color-1);
+  }
+  .input-text-box{
+    background-color: var(--foreground-color-2);
+    
+  }
+  .typing-text{
+    color: var(--text-paragraph);
+    text-align: start;
+  }
+  .how-it-work {
+    font-size: 17px;
+    border: 1px solid var(--text-paragraph);
+    border-radius: 10px;
+    color: var(--text-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px;
+    min-height: 44px;
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Added transition for hover effect */
+  }
+
+  /* New hover effect */
+  .how-it-work:hover {
+    transform: scale(1.05); /* Slightly enlarges the element on hover */
+    background-color: var(--hover-background); /* Change to a hover background color */
+  }
+
+  /* New animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .how-it-work {
+    animation: fadeIn 1s ease-in; /* Applies the fade-in animation */
+  }
+  .learn-more{
+    background: var(--button-background);
+  }
+  .result-bg{
+    background-color: var(--foreground-color-1);
+  }

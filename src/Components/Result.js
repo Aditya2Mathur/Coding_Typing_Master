@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import './components.css'
 
 const Result = (props) => {
   const [toggle, setToggle] = useState(false);
@@ -11,11 +12,12 @@ const Result = (props) => {
   }
 
   return (
-    <div className=" bg-skin-bgcol p-9 rounded-2xl backdrop-blur  outline">
+    <div className=" result-bg p-9 rounded-2xl backdrop-blur  outline">
+       
       <p>WPM</p>
-      <p className=" text-6xl mb-6 text-skin-base">
+      <spam className=" text-6xl mb-6 text-skin-base">
         {Math.round(correctWordAmount / minutes || 0)}
-      </p>
+      </spam>
       <p>Acc:</p>
       <p className=" text-6xl mb-6 text-skin-base">
         {Math.floor(100 -
@@ -24,8 +26,8 @@ const Result = (props) => {
       </p>
 
       <div className="mt-8">
-        <p>raw wpm: {(Math.round(totalWords.length / minutes || 0))}</p>
-        <p>test type: {totalWords.length} Words</p>
+        <p>Raw wpm: {(Math.round(totalWords.length / minutes || 0))}</p>
+        <p>Test type: {totalWords.length} Words</p>
       </div>
       <button
         onClick={toggleWords}

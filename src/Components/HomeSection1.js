@@ -1,18 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import navLogo from "../Assets/navLogo.png";
 import "./components.css"
-import settingIcon from "../Assets/settings.png"
 
-function Navbar() {
+
+function HomeSection1() {
   return (
     <div className="bg-black/[.30] h-[80px] flex justify-evenly items-center">
     {/* Card */}
     <div className="flex justify-between items-center w-full max-w-screen-lg">
       <div className="flex justify-center items-center">
-        <Link to="/Home">
         <img src={navLogo} className="mx-auto" />
-        </Link>
       </div>
       <nav className="nav font-semibold text-lg">
         <ul className="flex justify-center">
@@ -29,7 +26,7 @@ function Navbar() {
       </nav>
       {/* Darkmode test */}
       <div className="flex justify-center setting-icon-outer items-center p-1">
-        <Link to="/settings">
+        <Link to="settings">
           <img src={settingIcon} className="setting-icon mx-auto " />
         </Link>
       </div>
@@ -38,4 +35,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default HomeSection1;

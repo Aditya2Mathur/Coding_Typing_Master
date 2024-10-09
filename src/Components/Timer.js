@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import "./components.css";
 
 function Timer(props) {
   const { correctWords, startCounting, timeElapsed, setTimeElapsed } = props;
@@ -16,13 +17,23 @@ function Timer(props) {
     return () => {
       clearInterval(id);
     };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [startCounting]);
 
   const minutes = timeElapsed / 10 / 60;
   return (
-    <div>
-      <p>Timer: {timeElapsed / 10}</p>
-      <p>Speed: {Math.round(correctWords / minutes || 0)} WPM</p>
+    <div className="flex gap-5">
+      <div className="timer-box">
+        <p className="timer-display">{(timeElapsed / 10).toFixed(1)} S</p>
+        <p className="timer-text">Timer</p>
+      </div>
+      <div>
+      <div className="timer-box">
+        <p className="timer-display">{Math.round(correctWords / minutes || 0)} W/M</p>
+        <p className="timer-text">Speed</p>
+      </div>
+        <p></p>
+      </div>
     </div>
   );
 }
