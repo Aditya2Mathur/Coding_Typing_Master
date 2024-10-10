@@ -152,3 +152,117 @@ p{
   .result-bg{
     background-color: var(--foreground-color-1);
   }
+
+
+  /* General container animation */
+.animation-container {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Animation part 1: Heading */
+  .animation-part1 {
+    animation: slideInTop 0.8s ease-in-out;
+  }
+  
+  @keyframes slideInTop {
+    0% {
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Animation part 2: WPM Display */
+  .animation-part2 {
+    animation: bounceIn 0.9s ease-in-out;
+  }
+  
+  @keyframes bounceIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  /* Animation part 3: Accuracy Display */
+  .animation-part3 {
+    animation: fadeUp 1s ease-in-out;
+  }
+  
+  @keyframes fadeUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Animation part 4: Raw WPM and Test Type */
+  .animation-part4 {
+    animation: slideInLeft 1.2s ease-in-out;
+  }
+  
+  @keyframes slideInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  /* Animation part 5: Button and Word History */
+  .animation-part5 {
+    animation: zoomIn 1.5s ease-in-out;
+  }
+  
+  @keyframes zoomIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  li{
+    
+    font-size: 14px;
+  }
+  .featureBackground {
+    background: url(../Assets/featureImage.png);
+    background-position: center; /* Centers the background image */
+    background-size: cover; 
+    box-shadow: var(--foreground-color-2) 0px 2px 4px 0px, var(--foreground-color-2) 0px 2px 16px 0px;
+    object-fit: contain; 
+    transition: opacity 0.5s ease;
+    opacity: 1; /* Set initial opacity to 100% */
+}
+.typing-card-box{
+  box-shadow: var(--foreground-color-2) 0px 2px 4px 0px, var(--foreground-color-2) 0px 2px 16px 0px;
+}
+.featureBackground.fade-out {
+    opacity: 0.1; /* Set opacity to 10% when the class is added */
+}

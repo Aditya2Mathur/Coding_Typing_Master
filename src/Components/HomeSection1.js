@@ -1,36 +1,29 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./components.css"
+import featureBackground from "../Assets/featureImage.png"
 
 
 function HomeSection1() {
   return (
-    <div className="bg-black/[.30] h-[80px] flex justify-evenly items-center">
-    {/* Card */}
-    <div className="flex justify-between items-center w-full max-w-screen-lg">
-      <div className="flex justify-center items-center">
-        <img src={navLogo} className="mx-auto" />
+    <div className=" h-[540px] pt-10 ">
+      <div className="">
+      <div className="">
+        <h2 className="text-center mb-10"> Why Choose Coding Typing Master</h2>
       </div>
-      <nav className="nav font-semibold text-lg">
-        <ul className="flex justify-center">
-          <li className="p-4 nav-link text-paragraph duration-200 cursor-pointer active">
-            <Link to="/home">Home</Link>
-          </li>
-          <li className="p-4 nav-link duration-200 cursor-pointer">
-            <Link to="/settings">Settings</Link>
-          </li>
-          <li className="p-4 nav-link duration-200 cursor-pointer">
-            <Link to="/info">Info</Link>
-          </li>
+      <div>
+        <div className="">
+        <ul>
+          <li>Practice Typing with Popular Programming Languages: Focus on coding keywords, functions, and syntax in languages like Python, Java, C++, and JavaScript.</li>
+          <li>Real-Time Feedback and Progress Tracking: Instantly see your typing accuracy and speed, and track your progress over time to keep improving.</li>
+          <li>Tailored for Indian Coders: Typing exercises designed specifically for the unique challenges faced by Indian students and developers.</li>
+          <li>Boost Coding Productivity: Learn to type faster and more accurately so you can spend less time on typing and more time on problem-solving.</li>
+          <li>Beginner-Friendly and Free: Whether you’re just starting or want to improve, Coding Typing Master is completely free and easy to use for everyone.</li>
         </ul>
-      </nav>
-      {/* Darkmode test */}
-      <div className="flex justify-center setting-icon-outer items-center p-1">
-        <Link to="settings">
-          <img src={settingIcon} className="setting-icon mx-auto " />
-        </Link>
+        </div>
+        
       </div>
-    </div>
+      </div>
   </div>
   );
 }

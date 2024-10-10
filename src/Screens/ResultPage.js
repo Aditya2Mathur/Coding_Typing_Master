@@ -18,8 +18,9 @@ export function ResultPage({
         timeElapsed={timeElapsed}
         testFinished={testFinished}
         setTestFinished={setTestFinished}
+        handleReset={handleReset} // Pass handleReset here
       />
-      <ResetButton handleReset={handleReset} />
+     
     </div>
   );
 }

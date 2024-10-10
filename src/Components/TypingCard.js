@@ -45,29 +45,30 @@ function TypingCard() {
 
   function processInput(value) {
     if (!startCounting) {
-      setStartCounting(true);
+        setStartCounting(true);
     }
     if (value.endsWith(" ")) {
-      if (activeWordIndex === word.length - 1) {
+        if (activeWordIndex === word.length - 1) {
+            setUserInput("");
+            setStartCounting(false);
+            setTestFinished(true);
+            return;
+        }
+
+        setActiveWordIndex((index) => index + 1);
         setUserInput("");
-        setStartCounting(false);
-        setTestFinished(true);
-        return;
-      }
 
-      setActiveWordIndex((index) => index + 1);
-      setUserInput("");
-
-      setCorrectWordArray((data) => {
-        const newword = value.trim();
-        const newResult = [...data];
-        newResult[activeWordIndex] = newword === word[activeWordIndex];
-        return newResult;
-      });
+        setCorrectWordArray((data) => {
+            const newword = value.trim();
+            const newResult = [...data];
+            // Update the correctness of the word
+            newResult[activeWordIndex] = newword === word[activeWordIndex];
+            return newResult;
+        });
     } else {
-      setUserInput(value);
+        setUserInput(value);
     }
-  }
+}
 
   return testFinished ? (
     <ResultPage
@@ -77,6 +78,8 @@ function TypingCard() {
       setTestFinished={setTestFinished}
       handleReset={handleReset}
       correctWordArray={correctWordArray}
+      // Add the correct WPM calculation
+      wpm={calculateWPM(correctWordArray.length, timeElapsed)}
     />
   ) : (
     <TypingPage
@@ -92,6 +95,12 @@ function TypingCard() {
       handleReset={handleReset}
     />
   );
+}
+
+// New function to calculate WPM
+function calculateWPM(wordsTyped, timeElapsed) {
+  const timeInMinutes = timeElapsed / 60; // Convert timeElapsed from seconds to minutes
+  return timeInMinutes > 0 ? Math.round(wordsTyped / timeInMinutes) : 0; // Calculate WPM
 }
 
 export default TypingCard;

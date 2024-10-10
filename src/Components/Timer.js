@@ -17,7 +17,6 @@ function Timer(props) {
     return () => {
       clearInterval(id);
     };
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [startCounting]);
 
   const minutes = timeElapsed / 10 / 60;
@@ -29,7 +28,7 @@ function Timer(props) {
       </div>
       <div>
       <div className="timer-box">
-        <p className="timer-display">{Math.round(correctWords / minutes || 0)} W/M</p>
+        <p className="timer-display">{Math.round(correctWords / (timeElapsed / 10 / 60) || 0)} W/M</p>
         <p className="timer-text">Speed</p>
       </div>
         <p></p>
