@@ -8,6 +8,7 @@ import HomeSection2 from "../Components/HomeSection2";
 
 import "../Components/components.css";
 import { Helmet } from "react-helmet-async";
+import HomeSection3 from "../Components/HomeSection3";
 function Home() {
   return (
     <>
@@ -41,15 +42,21 @@ function Home() {
             </div>
             
             <div
-              className="flex justify-evenly mb-20 mx-[150px] rounded-md featureBackground"
-              data-aos="fade-left"
+              className="flex justify-evenly mb-20 mx-[150px] rounded-md featureBackground "
+              
             >
               <HomeSection1 />
               
             </div>
+            <div className="flex justify-evenly mb-20 mx-[150px] rounded-md">
+            <HomeSection3/>
+            </div>
             <div className="flex justify-evenly mb-20 mx-[200px] rounded-md">
             <HomeSection2/>
             </div>
+            
+            <div className="h-2 bg-[FFFCFF] w-full"></div>
+            
           </main>
         </section>
       </div>
