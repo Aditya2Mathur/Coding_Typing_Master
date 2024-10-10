@@ -11,6 +11,9 @@
     text-transform: uppercase;
     font-weight: 500;
 }
+p, li{
+  color: var(--text-paragraph);
+}
 .color-background-1 {
     background-color: var(--background-color-1);
 }
@@ -265,4 +268,8 @@ p{
 }
 .featureBackground.fade-out {
     opacity: 0.1; /* Set opacity to 10% when the class is added */
+}
+.feature-second{
+  background-color: var(--foreground-color-1);
+  box-shadow: var(--foreground-color-2) 0px 2px 4px 0px, var(--foreground-color-2) 0px 2px 16px 0px;
 }

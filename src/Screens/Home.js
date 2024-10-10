@@ -4,6 +4,7 @@ import TypingCard from "../Components/TypingCard";
 import { Link } from "react-router-dom";
 import "../App.css";
 import HomeSection1 from "../Components/HomeSection1";
+import HomeSection2 from "../Components/HomeSection2";
 
 import "../Components/components.css";
 import { Helmet } from "react-helmet-async";
@@ -43,11 +44,12 @@ function Home() {
               className="flex justify-evenly mb-20 mx-[150px] rounded-md featureBackground"
               data-aos="fade-left"
             >
-
               <HomeSection1 />
               
             </div>
-            
+            <div className="flex justify-evenly mb-20 mx-[200px] rounded-md">
+            <HomeSection2/>
+            </div>
           </main>
         </section>
       </div>
