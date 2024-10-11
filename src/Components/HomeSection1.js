@@ -1,19 +1,17 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./components.css"
-import featureBackground from "../Assets/featureImage.png"
 
 
 function HomeSection1() {
   return (
-    <div className=" h-[540px] pt-10 ">
+    <div className=" h-[100%] pb-52 pt-10">
       <div className="">
       <div className="">
         <h2 className="text-center mb-10"> Why Choose Coding Typing Master</h2>
       </div>
       <div>
         <div className="">
-        <ul>
+        <ul className="px-10">
           <li>Practice Typing with Popular Programming Languages: Focus on coding keywords, functions, and syntax in languages like Python, Java, C++, and JavaScript.</li>
           <li>Real-Time Feedback and Progress Tracking: Instantly see your typing accuracy and speed, and track your progress over time to keep improving.</li>
           <li>Tailored for Indian Coders: Typing exercises designed specifically for the unique challenges faced by Indian students and developers.</li>

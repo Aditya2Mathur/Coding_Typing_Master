@@ -5,7 +5,7 @@ import featureImage2 from "../Assets/featureImage2.png";
 
 function HomeSection3() {
   return (
-    <div className="flex flex-col md:flex-row h-[35vh] rounded-lg feature-second pt-10">
+    <div className="flex flex-col md:flex-row h-[40%] rounded-lg feature-second pt-10">
     {/* Text Side */}
     <div className="md:w-1/2 p-4 ">
       <h2 className="text-left mb-10">World of Valuable Insights</h2>

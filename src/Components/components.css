@@ -11,8 +11,42 @@
     text-transform: uppercase;
     font-weight: 500;
 }
+img{
+  border-radius: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.heading-4{
+  font-size: 17px;
+  font-weight: bold;
+}
 p, li{
   color: var(--text-paragraph);
+}
+/* Add this to your components.css file */
+.arrow-button {
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+.arrow-button:hover {
+   /* Change background color on hover */
+  transform: scale(1.1); /* Slightly increase size */
+}
+.arrow-button {
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Smooth transition */
+}
+
+.arrow-button:hover {
+
+  transform: scale(1.1); /* Slightly increase size */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+}
+.faq-item {
+  padding: 10px 0; /* Add padding for better spacing */
+}
+
+.faq-divider {
+  border: 1px solid #ccc; /* Light gray color for the divider */
+  margin: 10px 0; /* Space above and below the divider */
 }
 .color-background-1 {
     background-color: var(--background-color-1);
@@ -272,4 +306,23 @@ p{
 .feature-second{
   background-color: var(--foreground-color-1);
   box-shadow: var(--foreground-color-2) 0px 2px 4px 0px, var(--foreground-color-2) 0px 2px 16px 0px;
+}
+
+.faq-container {
+    width: 800px; /* Set a fixed width for the FAQ section */
+    max-width: 100%; /* Ensure it doesn't exceed the container's width */
+}
+
+.faq-item {
+    padding: 10px 0; /* Add padding for better spacing */
+}
+.footer-section{
+  background-color: var(--foreground-color-2);
+}
+.faq-divider {
+    border: 1px solid #ccc; /* Light gray color for the divider */
+    margin: 10px 0; /* Space above and below the divider */
+}
+.footer-logo{
+  height: 30px;
 }
