@@ -11,6 +11,11 @@
     text-transform: uppercase;
     font-weight: 500;
 }
+@media (max-width: 768px) {
+  .h4-heading {
+      font-size: 12px; /* Adjusted font size for mobile and tablet */
+  }
+}
 img{
   border-radius: 20px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
@@ -22,7 +27,6 @@ img{
 p, li{
   color: var(--text-paragraph);
 }
-/* Add this to your components.css file */
 .arrow-button {
   transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
 }
@@ -297,9 +301,20 @@ p{
     transition: opacity 0.5s ease;
     opacity: 1; /* Set initial opacity to 100% */
 }
-.typing-card-box{
-  box-shadow: var(--foreground-color-2) 0px 2px 4px 0px, var(--foreground-color-2) 0px 2px 16px 0px;
+
+/* Responsive adjustments */
+@media (max-width: 768px) { /* Tablet */
+    .featureBackground {
+        background-size: contain; /* Adjust size for tablets */
+    }
 }
+
+@media (max-width: 480px) { /* Phone */
+    .featureBackground {
+        background-size: cover; /* Adjust size for phones */
+    }
+}
+
 .featureBackground.fade-out {
     opacity: 0.1; /* Set opacity to 10% when the class is added */
 }
@@ -309,12 +324,25 @@ p{
 }
 
 .faq-container {
-    width: 800px; /* Set a fixed width for the FAQ section */
     max-width: 100%; /* Ensure it doesn't exceed the container's width */
+    padding: 16px; /* Default padding */
+}
+
+@media (min-width: 768px) { /* Tablet and larger */
+    .faq-container {
+        padding: 24px; /* Increased padding for larger screens */
+    }
 }
 
 .faq-item {
     padding: 10px 0; /* Add padding for better spacing */
+    padding: 8px; /* Default padding */
+}
+
+@media (min-width: 768px) { /* Tablet and larger */
+    .faq-item {
+        padding: 12px; /* Increased padding for larger screens */
+    }
 }
 .footer-section{
   background-color: var(--foreground-color-2);

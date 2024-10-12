@@ -24,7 +24,7 @@ function Footer() {
   const [selectedIndex, setSelectedIndex] = useState(null); // State to track selected question
 
   return (
-    <div className="flex justify-center gap-5 footer-section flex-col md:flex-col h-full rounded-lg p-10">
+    <div className="flex justify-center gap-5 mx-auto footer-section flex-col md:flex-col h-full rounded-lg p-10">
       {/* Link Area */}
       <div className="nav font-semibold ">
         <ul className="flex justify-center">

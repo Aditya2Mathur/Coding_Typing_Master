@@ -45,27 +45,23 @@ function Home() {
               </div>
             </div>
             
-            <div
-              className="flex justify-evenly mb-20 mx-auto rounded-md featureBackground"
-              
-            >
+            <div className="flex justify-evenly mb-20 lg:w-[80%] sm:w-full mx-auto rounded-md featureBackground">
               <HomeSection1 />
-              
             </div>
-            <div className="flex justify-evenly mb-20 mx-[150px] rounded-md">
+            <div className="flex justify-evenly mb-20 mx-auto lg:w-[80%] sm:w-full rounded-md">
             <HomeSection3/>
             </div>
-            <div className="flex justify-evenly mb-20 mx-[200px] rounded-md">
+            <div className="flex justify-evenly mb-20 lg:w-[80%] sm:w-full mx-auto rounded-md">
             <HomeSection2/>
             </div>
             <div className="h-2 bg-[FFFCFF] w-full"></div> 
-            <div className="flex justify-evenly mb-20 mx-[200px] rounded-md">
+            <div className="flex justify-evenly mb-20 mx-auto lg:w-[80%] sm:w-full lg:mx-40 rounded-md">
             <HomeSection4/>
             </div>
-            <div className="flex justify-evenly mb-20 mx-[200px] rounded-md">
+            <div className="flex justify-center mb-20 lg:w-[80%] sm:w-full mx-auto rounded-md">
             <TestimonialSection/>
             </div>
-            <div className="flex justify-evenly mb-20 mx-[150px] rounded-md">
+            <div className="flex justify-evenly mb-20 sm:mx-10  rounded-md">
             <FaqSection/>
             </div>
           </main>

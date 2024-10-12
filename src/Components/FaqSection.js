@@ -16,17 +16,17 @@ function FaqSection() {
     const [selectedIndex, setSelectedIndex] = useState(null); // State to track selected question
 
     return (
-        <div className="flex align-middle flex-col md:flex-row h-full rounded-lg p-10">
+        <div className="flex align-middle flex-col md:flex-row h-full rounded-lg p-5 md:p-10 max-w-4xl mx-auto"> {/* Added max-width and centering */}
             {/* Text Side */}
-            <div>
+            <div className="w-full"> {/* Ensure full width on smaller screens */}
                 <div className="md:w-1/1 pl-3">
                     <h2 className="text-left mb-5">Frequently Asked Questions</h2>
                 </div>
-                <div className="faq-container p-4"> {/* Added a container for consistent width */}
+                <div className="faq-container p-4 md:p-6"> {/* Added responsive padding */}
                     {/* Testimonial Text */}
                     <div className="pb-5 transition-opacity duration-500 max-w-full flex gap-5 flex-col">
                         {FAQ.map((item, index) => ( // Iterate over FAQ array
-                            <div key={index} className="faq-item" onClick={() => setSelectedIndex(index)} style={{ cursor: 'pointer' }}>
+                            <div key={index} className="faq-item p-3 md:p-4" onClick={() => setSelectedIndex(index)} style={{ cursor: 'pointer' }}> {/* Added responsive padding */}
                                 <h4 className="heading-4">{item.question}</h4> {/* Display question */}
                                 <p className={`italic transition-all duration-500 ${selectedIndex === index ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0 overflow-hidden'}`}>
                                     {item.answer}

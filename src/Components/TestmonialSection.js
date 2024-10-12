@@ -35,7 +35,7 @@ function TestimonialSection() {
   };
 
   return (
-    <div className="flex align-middle flex-col md:flex-row h-full rounded-lg feature-second p-10">
+    <div className="flex align-middle flex-col sm:flex-col md:flex-row h-full rounded-lg feature-second p-10">
       {/* Text Side */}
       <div>
         <div className="md:w-1/2 pl-3">
@@ -43,9 +43,9 @@ function TestimonialSection() {
         </div>
         <div className="p-4">
           {/* Testimonial Text */}
-          <div className="pb-5 transition-opacity duration-500 max-h-24" style={{ minHeight: '100px' }}> {/* Set a minimum height to prevent flickering */}
+          <div className="pb-5 sm:h-[50%] transition-opacity duration-500 max-h-full " style={{ minHeight: '100px' }}>
             <h4 className="heading-4">{testimonials[currentIndex].title}</h4>
-            <p className=" italic">" {testimonials[currentIndex].content} "</p>
+            <p className="italic">" {testimonials[currentIndex].content} "</p>
           </div>
           {/* Navigation Buttons */}
           <div className="flex justify-between">
@@ -57,7 +57,7 @@ function TestimonialSection() {
       <div>
         <div>
           {/* Testimonial Images */}
-          <img src={testimonials[currentIndex].image} alt="Testimonial" className=" max-w-md transition-opacity duration-500" /> {/* Dynamic image with transition */}
+          <img src={testimonials[currentIndex].image} alt="Testimonial" className="w-full transition-opacity duration-500" />
         </div>
       </div>
     </div>

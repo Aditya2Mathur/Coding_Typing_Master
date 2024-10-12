@@ -5,7 +5,7 @@ import featureImage2 from "../Assets/featureImage2.png";
 
 function HomeSection2() {
   return (
-    <div className="flex flex-col md:flex-row h-[400px] rounded-lg feature-second pt-10">
+    <div className="flex flex-col md:flex-row h-full rounded-lg feature-second pt-10">
     {/* Text Side */}
     <div className="md:w-1/2 p-4 ">
       <h2 className="text-left mb-10">What is Coding Typing Master?</h2>

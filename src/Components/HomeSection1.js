@@ -18,8 +18,7 @@ function HomeSection1() {
           <li>Boost Coding Productivity: Learn to type faster and more accurately so you can spend less time on typing and more time on problem-solving.</li>
           <li>Beginner-Friendly and Free: Whether you’re just starting or want to improve, Coding Typing Master is completely free and easy to use for everyone.</li>
         </ul>
-        </div>
-        
+        </div> 
       </div>
       </div>
   </div>
