@@ -57,10 +57,10 @@ function Home() {
             <div className="flex sm:flex-col-reverse justify-evenly mb-20 mx-auto lg:w-[80%] sm:w-full lg:mx-40 rounded-md">
             <HomeSection4/>
             </div>
-            <div className="flex justify-center mb-20 lg:w-[80%] sm:w-full mx-auto rounded-md">
+            <div className="flex justify-center mb-10 lg:w-[80%] sm:w-full mx-auto rounded-md">
             <TestimonialSection/>
             </div>
-            <div className="flex justify-evenly mb-20 sm:mx-10  rounded-md">
+            <div className="flex justify-evenly mb-10 sm:mx-10  rounded-md">
             <FaqSection/>
             </div>
           </main>
