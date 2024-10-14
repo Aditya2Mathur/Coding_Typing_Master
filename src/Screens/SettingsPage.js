@@ -9,7 +9,7 @@ const SettingsPage = () => {
   const navigate = useNavigate();
 
   const handleSubmit = () => {
-    navigate('/home');
+    navigate('/');
   };
 
   return (

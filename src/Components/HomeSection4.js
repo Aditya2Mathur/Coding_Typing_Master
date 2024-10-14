@@ -4,7 +4,7 @@ import featureImage4 from "../Assets/featureImage4.png";
 
 function HomeSection4() {
   return (
-    <div className="flex flex-col md:flex-row h-full rounded-lg feature-second pt-10">
+    <div className="flex flex-col  md:flex-row h-full rounded-lg feature-second pt-10">
       {/* Text Side */}
       <div>
         <div className="md:w-1/2 pl-3">
@@ -28,7 +28,7 @@ function HomeSection4() {
                 <p>As you practice, you can track your typing speed and accuracy in real-time. Coding Typing Master shows you how many words per minute (WPM) you're typing and how accurate you are, helping you see your progress and identify areas for improvement.</p>
             </div>
             <div>
-              <img src={featureImage4}></img>
+              <img src={featureImage4} className="w-[80%] h-auto mx-auto"></img>
             </div>
         </div>
       </div>

@@ -1,6 +1,5 @@
 import React from "react";
 import Result from "../Components/Result";
-import ResetButton from "../Components/ResetButton";
 export function ResultPage({
   getWords,
   timeElapsed,

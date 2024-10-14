@@ -1,4 +1,3 @@
-import React, { useEffect } from "react";
 import Navbar from "../Components/Navbar";
 import TypingCard from "../Components/TypingCard";
 import { Link } from "react-router-dom";
@@ -38,8 +37,8 @@ function Home() {
                   <Link to="/FAQ" className="how-it-work">
                     How It Works
                   </Link>
-                  <Link to="/FAQ" className="how-it-work learn-more">
-                    Learn More
+                  <Link to="/settings" className="how-it-work learn-more">
+                    Filter
                   </Link>
                 </div>
               </div>
@@ -55,7 +54,7 @@ function Home() {
             <HomeSection2/>
             </div>
             <div className="h-2 bg-[FFFCFF] w-full"></div> 
-            <div className="flex justify-evenly mb-20 mx-auto lg:w-[80%] sm:w-full lg:mx-40 rounded-md">
+            <div className="flex sm:flex-col-reverse justify-evenly mb-20 mx-auto lg:w-[80%] sm:w-full lg:mx-40 rounded-md">
             <HomeSection4/>
             </div>
             <div className="flex justify-center mb-20 lg:w-[80%] sm:w-full mx-auto rounded-md">

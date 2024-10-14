@@ -6,6 +6,10 @@
     --text-paragraph: #868DC1;
     --button-background: linear-gradient(90deg, #64B9F5, #7D57E7);
 }
+.heading-3{
+  font-size: 18px;
+  font-weight: 500;
+}
 .h4-heading {
     font-size: 16px;
     text-transform: uppercase;
@@ -294,6 +298,15 @@ p{
   }
   .featureBackground {
     background: url(../Assets/featureImage.png);
+    background-position: center; /* Centers the background image */
+    background-size: cover; 
+    box-shadow: var(--foreground-color-2) 0px 2px 4px 0px, var(--foreground-color-2) 0px 2px 16px 0px;
+    object-fit: contain; 
+    transition: opacity 0.5s ease;
+    opacity: 1; /* Set initial opacity to 100% */
+}
+  .AboutfeatureBackground {
+    background: url(../Assets/ourMission.png);
     background-position: center; /* Centers the background image */
     background-size: cover; 
     box-shadow: var(--foreground-color-2) 0px 2px 4px 0px, var(--foreground-color-2) 0px 2px 16px 0px;

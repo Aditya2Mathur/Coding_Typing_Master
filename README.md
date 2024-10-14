@@ -36,7 +36,7 @@ Coding Typing Master is a web application designed to improve your typing speed 
 
 ## Pages
 - **home.js**: Homepage of the application.
-- **InfoPage.js**: Information page providing details about the application.
+- **AboutPage.js**: Information page providing details about the application.
 - **ResultPage.js**: Page displaying typing results.
 - **SettingPage.js**: Page for customizing settings such as themes.
 - **TypingPage.js**: Page for practicing typing exercises.

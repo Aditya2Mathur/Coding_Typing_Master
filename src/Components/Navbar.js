@@ -20,10 +20,10 @@ function Navbar() {
             <Link to="/">Home</Link>
           </li>
           <li className="p-4 nav-link duration-200 cursor-pointer">
-            <Link to="/settings">Settings</Link>
+            <Link to="/settings">Contact</Link>
           </li>
           <li className="p-4 nav-link duration-200 cursor-pointer">
-            <Link to="/info">Info</Link>
+            <Link to="/about-us">About Us</Link>
           </li>
         </ul>
       </nav>
