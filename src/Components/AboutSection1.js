@@ -12,7 +12,7 @@ function AboutSection1() {
         <div>
           <div>
             <ul className="px-10">
-            <h3 className="heading-3">Helping You Code Faster and More Accurately</h3>
+            <h3 className="heading-3 mb-2">Helping You Code Faster and More Accurately</h3>
               <p>
                 The mission behind Coding Typing Master is to support <strong> Computer
                 Science Students, Working Professionals, and those preparing for

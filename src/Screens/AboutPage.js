@@ -3,6 +3,7 @@ import Navbar from "../Components/Navbar";
 import AboutSection1 from "../Components/AboutSection1";
 import "../Components/components.css";
 import Footer from '../Components/Footer'
+import AboutSection2 from "../Components/AboutSection2";
 function CodingTypingMasterAboutPage() {
   return (
     <div>
@@ -43,8 +44,10 @@ function CodingTypingMasterAboutPage() {
         <div className="flex justify-evenly my-20 lg:w-[80%] sm:w-full mx-auto rounded-md AboutfeatureBackground">
           <AboutSection1 />
         </div>
+        <div className="flex justify-evenly my-20 lg:w-[80%] sm:w-full mx-auto rounded-md AboutfeatureBackground">
+          <AboutSection2 />
+        </div>
         <div className="">
-          
           <Footer />
         </div>
       </section>
