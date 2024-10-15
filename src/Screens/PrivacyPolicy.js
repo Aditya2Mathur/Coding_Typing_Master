@@ -6,6 +6,7 @@ import CallToAction from "../Components/CallToAction";
 import PrivacyPolicySection1 from "../Components/PrivacyPolicy/PrivacyPolicySection1";
 import PrivacyPolicySection2 from "../Components/PrivacyPolicy/PrivacyPolicySection2";
 import PrivacyPolicySection3 from "../Components/PrivacyPolicy/PrivacyPolicySection3";
+import PrivacyPolicySection4 from "../Components/PrivacyPolicy/PrivacyPolicySection4";
 
 function PrivacyPolicy() {
   return (
@@ -42,6 +43,9 @@ function PrivacyPolicy() {
         </div>
         <div className="flex justify-evenly my-20 lg:w-[80%] sm:w-full mx-auto rounded-md AboutfeatureBackground">
           <PrivacyPolicySection3 />
+        </div>
+        <div className="flex justify-evenly my-20 lg:w-[80%] sm:w-full mx-auto rounded-md AboutfeatureBackground">
+          <PrivacyPolicySection4 />
         </div>
         <div className="flex justify-evenly my-20 lg:w-[80%] sm:w-full mx-auto rounded-md ">
           <CallToAction />
