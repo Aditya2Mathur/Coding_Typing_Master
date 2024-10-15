@@ -1,6 +1,6 @@
 import React from "react";
-import "./components.css";
-import featureImage4 from "../Assets/featureImage4.png";
+import "../components.css";
+import featureImage4 from "../../Assets/featureImage4.png";
 
 function HomeSection4() {
   return (

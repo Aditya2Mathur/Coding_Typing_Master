@@ -1,9 +1,8 @@
 import React, { useState } from "react"; // Added useState import
-import "./components.css";
-import featureImage4 from "../Assets/featureImage4.png";
-import Profile1 from "../Assets/profile1.png";
-import Profile2 from "../Assets/profile2.png";
-import Profile3 from "../Assets/profile3.png";
+import "../components.css";
+import Profile1 from "../../Assets/profile1.png";
+import Profile2 from "../../Assets/profile2.png";
+import Profile3 from "../../Assets/profile3.png";
 
 function TestimonialSection() {
   const testimonials = [ // Array of testimonials

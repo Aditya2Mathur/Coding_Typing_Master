@@ -7,6 +7,7 @@ import SettingsPage from "../Screens/SettingsPage";
 import AboutPage from "../Screens/AboutPage";
 import Faq from "../Screens/FaqPage";
 import Contact from "../Screens/ContactPage";
+import PrivacyPolicy from "../Screens/PrivacyPolicy";
 
 function AppRoutes() {
   return (
@@ -19,6 +20,7 @@ function AppRoutes() {
             <Route exact path="/about-us" element={<AboutPage />} />
             <Route exact path="/faq" element={<Faq />} />
             <Route exact path="/contact-us" element={<Contact />} />
+            <Route exact path="/privacy-policy" element={<PrivacyPolicy />} />
           </Routes>
         </Router>
       </WordProvider>

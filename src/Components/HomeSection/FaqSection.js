@@ -1,5 +1,5 @@
 import React, { useState } from "react"; // Added useState import
-import "./components.css";
+import "../components.css";
 
 function FaqSection() {
     const FAQ = [ // Array of FAQ

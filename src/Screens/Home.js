@@ -2,15 +2,15 @@ import Navbar from "../Components/Navbar";
 import TypingCard from "../Components/TypingCard";
 import { Link } from "react-router-dom";
 import "../App.css";
-import HomeSection1 from "../Components/HomeSection1";
-import HomeSection2 from "../Components/HomeSection2";
+import HomeSection1 from "../Components/HomeSection/HomeSection1";
+import HomeSection2 from "../Components/HomeSection/HomeSection2";
 
 import "../Components/components.css";
 import { Helmet } from "react-helmet-async";
-import HomeSection3 from "../Components/HomeSection3";
-import HomeSection4 from "../Components/HomeSection4";
-import TestimonialSection from "../Components/TestmonialSection";
-import FaqSection from "../Components/FaqSection";
+import HomeSection3 from "../Components/HomeSection/HomeSection3";
+import HomeSection4 from "../Components/HomeSection/HomeSection4";
+import TestimonialSection from "../Components/HomeSection/TestmonialSection";
+import FaqSection from "../Components/HomeSection/FaqSection";
 import Footer from "../Components/Footer";
 function Home() {
   return (

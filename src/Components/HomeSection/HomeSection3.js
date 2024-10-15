@@ -1,7 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import "./components.css";
-import featureImage2 from "../Assets/featureImage2.png";
+import "../components.css";
+import featureImage2 from "../../Assets/featureImage2.png";
 
 function HomeSection3() {
   return (
