@@ -25,6 +25,9 @@ function Navbar() {
           <li className="p-4 nav-link duration-200 cursor-pointer">
             <Link to="/about-us">About Us</Link>
           </li>
+          <li className="p-4 nav-link duration-200 cursor-pointer">
+            <Link to="/blog">Blogs</Link>
+          </li>
         </ul>
       </nav>
       {/* Darkmode test */}

@@ -12,7 +12,7 @@ function PrivacyPolicySection4() {
         Since we do not collect personal data, there is no user data to secure. However, we follow best practices to ensure a safe and secure experience.
         </h3>
         <p>
-        At Coding Typing Master, we prioritize your safety. While we don’t collect or store any personal information, we ensure that our website remains secure by using trusted technologies and following industry standards to provide a safe environment for users.
+        Since we do not collect or store any personal information, there is no user data to secure on our end. However, we comply with data protection regulations such as GDPR and CPRA, ensuring that any data collected by third-party services like Google AdSense is handled securely. We follow best practices to ensure a safe and compliant experience for all users.
         </p>
       </div>
         {/* Image Side */}

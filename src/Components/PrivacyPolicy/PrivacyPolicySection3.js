@@ -16,7 +16,7 @@ function PrivacyPolicySection3() {
         We use Google AdSense to display ads. Google may use cookies to show personalized ads based on your browsing habits.
         </h3>
         <p>
-        Our website uses Google AdSense to display advertisements to help keep our service free for users. Google may use cookies and other tracking technologies to deliver personalized ads based on your browsing behavior. While we do not collect or store personal data, Google may collect information as part of their ad-serving process. To understand how Google handles this data, please review Google’s Privacy & Terms.
+        We use Google AdSense to display ads, which may use cookies and tracking technologies to serve personalized ads based on your browsing behavior. In compliance with the General Data Protection Regulation (GDPR) and California Privacy Rights Act (CPRA), users from the European Union and California will be provided with options to control their data, including the ability to opt-out of personalized ads. For more details on how Google uses data and your options, please visit Google’s Privacy & Terms.
         </p>
       </div>
     </div>
